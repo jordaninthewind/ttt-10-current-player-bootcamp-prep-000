@@ -2,10 +2,10 @@
 def turn_count(board)
   counter = 0
   board.each do |place|
-    if (place == "X" || "O")
-      counter += 1
-    else
+    if (place == " ")
       counter == counter
+    else
+      counter += 1
     end
   end
   return counter
